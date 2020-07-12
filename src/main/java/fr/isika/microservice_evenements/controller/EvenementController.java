@@ -24,7 +24,7 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/events")
 public class EvenementController {
 
-	private WebClient client = WebClient.create("http://localhost:8282");
+	private WebClient client = WebClient.create("https://africaparis-nodejs.herokuapp.com");
 
 	@GetMapping(path = "/events-api/public/events")
 	public Flux<Evenement> getEvenement() {
